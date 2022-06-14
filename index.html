@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <div class="time-tracker">
+      <div class="profile">
+        <div class="profile__person">
+          <img
+            src="images/image-jeremy.png"
+            alt="profile picture"
+            class="profile__img profile-margin-left"
+          />
+          <p class="profile__text profile-margin-left">
+            Report for <span class="profile__name">Jeremy Robson</span>
+          </p>
+        </div>
+        <div class="profile__time">
+          <p class="profile__btn monthly profile-margin-left">Monthly</p>
+          <p class="profile__btn weekly profile-margin-left active">Weekly</p>
+          <p class="profile__btn daily profile-margin-left">Daily</p>
+        </div>
+      </div>
+      <div class="time-card">
+        <div class="time-card__subject orange">
+          <img
+            src="images/icon-work.svg"
+            alt="toolbox"
+            class="time-card__img"
+          />
+        </div>
+        <div class="time-card__time work">
+          <div class="time-card__header time-margin-left">
+            <div class="time-card__title">Work</div>
+            <div class="time-card__dots"></div>
+          </div>
+          <div class="time-container">
+            <p class="time-card__hrs time-margin-left work-hrs">32hrs</p>
+            <div class="time-card__previous time-margin-left work-previous-hrs">
+              Last Week - 36hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="time-card">
+        <div class="time-card__subject blue">
+          <img
+            src="images/icon-play.svg"
+            alt="game controller"
+            class="time-card__img"
+          />
+        </div>
+        <div class="time-card__time play">
+          <div class="time-card__header time-margin-left">
+            <div class="time-card__title">Play</div>
+            <div class="time-card__dots"></div>
+          </div>
+          <div class="time-container">
+            <p class="time-card__hrs time-margin-left play-hrs">32hrs</p>
+            <div class="time-card__previous time-margin-left play-previous-hrs">
+              Last Week - 36hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="time-card">
+        <div class="time-card__subject red">
+          <img
+            src="images/icon-study.svg"
+            alt="notepad"
+            class="time-card__img"
+          />
+        </div>
+        <div class="time-card__time study">
+          <div class="time-card__header time-margin-left">
+            <div class="time-card__title">Study</div>
+            <div class="time-card__dots"></div>
+          </div>
+          <div class="time-container">
+            <p class="time-card__hrs time-margin-left study-hrs">32hrs</p>
+            <div
+              class="time-card__previous time-margin-left study-previous-hrs"
+            >
+              Last Week - 36hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="time-card">
+        <div class="time-card__subject green">
+          <img
+            src="images/icon-exercise.svg"
+            alt="man running"
+            class="time-card__img"
+          />
+        </div>
+        <div class="time-card__time exercise">
+          <div class="time-card__header time-margin-left">
+            <div class="time-card__title">Exercise</div>
+            <div class="time-card__dots"></div>
+          </div>
+          <div class="time-container">
+            <p class="time-card__hrs time-margin-left exercise-hrs">32hrs</p>
+            <div
+              class="time-card__previous time-margin-left exercise-previous-hrs"
+            >
+              Last Week - 36hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="time-card">
+        <div class="time-card__subject purple">
+          <img
+            src="images/icon-social.svg"
+            alt="text bubbles"
+            class="time-card__img"
+          />
+        </div>
+        <div class="time-card__time social">
+          <div class="time-card__header time-margin-left">
+            <div class="time-card__title">Social</div>
+            <div class="time-card__dots"></div>
+          </div>
+          <div class="time-container">
+            <p class="time-card__hrs time-margin-left social-hrs">32hrs</p>
+            <div
+              class="time-card__previous time-margin-left social-previous-hrs"
+            >
+              Last Week - 36hrs
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="time-card">
+        <div class="time-card__subject yellow">
+          <img
+            src="images/icon-self-care.svg"
+            alt="heart"
+            class="time-card__img"
+          />
+        </div>
+        <div class="time-card__time self-care">
+          <div class="time-card__header time-margin-left">
+            <div class="time-card__title">Self Care</div>
+            <div class="time-card__dots"></div>
+          </div>
+          <div class="time-container">
+            <p class="time-card__hrs time-margin-left self-care-hrs">32hrs</p>
+            <div
+              class="time-card__previous time-margin-left self-care-previous-hrs"
+            >
+              Last Week - 36hrs
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <div class="wrapper">
+  <div class="person">Person</div>
+  <div class="work">work</div>
+  <div class="play">play</div>
+  <div class="study">study</div>
+  <div class="exercise">exercise</div>
+  <div class="social">social</div>
+  <div class="selfcare">selfcare</div>
+</div> -->
